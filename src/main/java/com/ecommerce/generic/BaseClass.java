@@ -16,7 +16,7 @@ public class BaseClass
 	public WebDriverUtilities wUtil;
 	public ReadDatafromPropFile r=new ReadDatafromPropFile();
 
-	@BeforeClass
+	@BeforeClass(groups= {"smoke","regression"})
 	public void launchBrowser()
 	{
 		driver=new ChromeDriver();
@@ -25,7 +25,7 @@ public class BaseClass
 	}
 
 
-	@BeforeMethod
+	@BeforeMethod(groups= {"smoke","regression"})
 	public void login() throws Exception
 	{
 		String Url=	r.readDataFromPropFile("url");
@@ -41,7 +41,7 @@ public class BaseClass
 	}
 
 
-	@AfterMethod
+	@AfterMethod(groups= {"smoke","regression"})
 	public void logout()
 	{
 		HomePage hm=new HomePage(driver);
@@ -50,7 +50,7 @@ public class BaseClass
 
 	}
 
-	@AfterClass
+	@AfterClass(groups= {"smoke","regression"})
 	public void closeBrowser()
 	{
 		driver.close();

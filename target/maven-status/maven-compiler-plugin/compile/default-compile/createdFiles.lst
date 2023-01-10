@@ -1,0 +1,8 @@
+com\ecommerce\generic\IAutoConstants.class
+SwaGLabs\SwaGLabs\App.class
+com\ecommerce\generic\BaseClass.class
+com\ecommerce\generic\WebDriverUtilities.class
+com\ecommerce\generic\ReadDatafromPropFile.class
+objectrepository\CartPage.class
+objectrepository\HomePage.class
+objectrepository\LoginPage.class

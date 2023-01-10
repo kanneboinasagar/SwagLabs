@@ -15,7 +15,7 @@ import objectrepository.HomePage;
 
 public class TC_01 extends BaseClass 
 {
-	@Test(priority=1)
+	@Test(groups="smoke")
 	public void swagLabs()
 	{
 		
@@ -48,7 +48,7 @@ public class TC_01 extends BaseClass
 		
 	}
 	
-	@Test(priority=2)
+	@Test(groups="regression")
 	public void productnames()
 	{
 		List<WebElement>e=driver.findElements(By.className("inventory_item_name"));
